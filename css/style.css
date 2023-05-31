@@ -1,0 +1,61 @@
+* {
+    font-family: Arial, sans-serif;
+    color: black;
+}
+h1 {
+   text-align: center;
+   font-size: 24px;
+   text-transform: uppercase;
+   font-weight: bold;
+}
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+li {
+    font-size: 18px;
+    padding: 10px;
+    border-bottom: 1px solid;
+    border-color: lightgray;
+    padding-left: 10px;
+    margin-left:  2%;
+}
+li:hover {
+    background-color: lightyellow;
+}
+
+.emoji-list li {
+  
+position: relative;
+  
+}
+
+.emoji-list li:focus {
+  outline: none;
+}
+
+.emoji-list li:focus::before {
+  content: '✔';
+  display: block;
+position: absolute;
+  transform: translate(-50%, -50%);
+  top:50%;
+  padding-right: 2%;
+}
+
+.emoji-list li:not(:focus)::before {
+  content: '❌';
+  display: block;
+  transform: translate(-50%, -50%);
+position: absolute;
+top: 50%;
+padding-right: 2%;
+
+}
+
+
+
+
+
+
+
